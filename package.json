@@ -1,0 +1,23 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "electron app demo",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guo405394956/electron.git"
+  },
+  "author": "guorongrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guo405394956/electron/issues"
+  },
+  "homepage": "https://github.com/guo405394956/electron#readme",
+  "devDependencies": {
+    "electron": "^13.1.8"
+  }
+}
