@@ -1,10 +1,12 @@
 const { app, BrowserWindow,Menu } = require('electron')
 const path = require('path')
 const { Notification } = require('electron')
-// const { getDoNotDisturb } = require('electron-notification-state')
-// console.log(getSessionState());
+
+// 通知
 const NOTIFICATION_TITLE = 'guorong自定义通知'
 const NOTIFICATION_BODY = '这是一条来自于electron的自定义通知'
+
+//菜单
 const dockMenu = Menu.buildFromTemplate([
   {
     label: 'New Window',
@@ -22,6 +24,8 @@ const dockMenu = Menu.buildFromTemplate([
     ]
   }
 ])
+
+
 // open
 app.whenReady().then(() => {
   createWindow()
@@ -37,6 +41,8 @@ app.whenReady().then(() => {
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit()
 })
+
+
 
 function createWindow () {
   const win = new BrowserWindow({
